@@ -1,23 +1,33 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    background_process (1.3)
+    childprocess (0.5.9)
+      ffi (~> 1.0, >= 1.0.11)
+    ffi (1.9.10-java)
     jrubyfx (1.1.1-java)
       jrubyfx-fxmlloader (>= 0.4)
     jrubyfx-fxmlloader (0.4.1-java)
     rack (1.6.4)
     rack-protection (1.5.3)
       rack
+    service_manager (0.6.4)
+      background_process (>= 1.2)
+      tcpsocket-wait
     sinatra (1.4.7)
       rack (~> 1.5)
       rack-protection (~> 1.4)
       tilt (>= 1.3, < 3)
+    tcpsocket-wait (1.0.0)
     tilt (2.0.2)
 
 PLATFORMS
   java
 
 DEPENDENCIES
+  childprocess
   jrubyfx
+  service_manager
   sinatra
 
 BUNDLED WITH
