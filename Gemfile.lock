@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    jrubyfx (1.1.1-java)
+      jrubyfx-fxmlloader (>= 0.4)
+    jrubyfx-fxmlloader (0.4.1-java)
+
+PLATFORMS
+  java
+
+DEPENDENCIES
+  jrubyfx
+
+BUNDLED WITH
+   1.11.2
