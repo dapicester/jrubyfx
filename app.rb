@@ -1,9 +1,11 @@
 require 'sinatra/base'
 
 class App < Sinatra::Base
-  get '/' do
-    'Hello world!'
+  configure do
+    set :server, :puma
   end
 
-  run! if app_file == $0
+  get '/' do
+    '<h1>Hello world!</h1>'
+  end
 end

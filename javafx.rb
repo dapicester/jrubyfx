@@ -4,7 +4,7 @@ class HelloJRubyFX < JRubyFX::Application
   def start(stage)
     uri = 'http://127.0.0.1:4567'
     options = {
-      title: 'Black App',
+      title: 'App',
       width: 800,
       height: 600
     }
@@ -21,4 +21,4 @@ class HelloJRubyFX < JRubyFX::Application
   end
 end
 
-HelloJRubyFX.launch
+#HelloJRubyFX.launch
